@@ -5,9 +5,9 @@
 Changing operational and environmental conditions pose significant challenges in many engineering tasks, including prognostics. In the presence of dynamic operating regimes, degradation can have distinct data profiles depending on the operational and environmental conditions. When these conditions are not factored out, it can be difficult to observe the deterioration path of the equipment. Therefore, it is useful to "baseline" the  data to focus on changes of system health. By baselining, we mean to eliminate the extra dimension of the data introduced by the dynamic conditions.
 
 <p float="center">
-  <img src="imgs/operational_conditions_2d.png" width="320" />
-  <img src="imgs/operational_conditions.png" width="320" /> 
-  <img src="imgs/operational_conditions_trend.png" width="320" />
+  <img src="imgs/operational_conditions_2d.png" width="33%">
+  <img src="imgs/operational_conditions.png" width="33%">
+  <img src="imgs/operational_conditions_trend.png" width="33%">
 </p>
 
 This repository provides code to normalize the data within each operating regime using a Multi-Layer Perceptron (MLP) network. The method works in an unsupervised way.   
