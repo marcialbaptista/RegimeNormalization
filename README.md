@@ -33,7 +33,12 @@ The C-MAPSS data consists in a collection of time series of observables at cruis
 
 ## Multi-Layer Perceptron
 
-![Multi-Layer Perceptron network](https://github.com/marcialbaptista/RegimeDetection/blob/master/imgs/MLP.png?raw=true)
+The Multi-Layer Perceptron (MLP) or Feed Forward Neural Network (FFNN) is the classical neural network model. The MLP can be composed of one or more layers, whose neurons are fully connected. The MLP is fully connected in the sense that each neuron in a layer is connected to all the neurons in the previous layer. Despite this forward dependence between successive layers, neurons (and its weights) are independent in the same layer. 
+There are several cases, such as our own, where the goal of the neural network is not to approximate a function but to optimize network properties. For example, variational autoencoders can learn data distributions in an unsupervised fashion by optimizing a Gaussian prior that is solely a function of the hidden layers. Sparse autoencoders are also based on the principle of unsupervised machine learning \cite{bengio2009learning}; they work by placing a sparsity constraint on the activations of the hidden layers. In our case, we place a restriction on the output signal. This allows us to baseline the input signal without having to supervise the network. \added{The novelty of our proposed ``normalizing'' MLP is the underlying idea that we optimize the network using an error function that does not depend on the difference between network input and output but only on the output. We believe this is an idea of significance both to prognostics and machine learning in general. 
+
+<p float="center">
+  <img src="imgs/MLP.png" width="60%">
+</p>
 
 ## Libraries Used
 
